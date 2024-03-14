@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+	int* p;
+	delete p;
 	cout << "Hello CMake." << endl;
 	return 0;
 }
