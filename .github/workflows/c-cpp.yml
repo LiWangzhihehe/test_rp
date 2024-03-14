@@ -18,3 +18,9 @@ jobs:
 
     - name: Run cppcheck
       run: cppcheck --enable=all .
+
+    - name: Install cpplint
+      run: sudo pip install cpplint
+
+    - name: Run cpplint
+      run: cpplint --recursive .
