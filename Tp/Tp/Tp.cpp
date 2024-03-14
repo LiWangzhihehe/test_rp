@@ -9,6 +9,8 @@ int main()
 {
 	// delete a nullptr.
 	int* p;
+	// print p value.
+	cout << "p value: " << p << endl;
 	delete p;
 
 	cout << "Hello CMake." << endl;
