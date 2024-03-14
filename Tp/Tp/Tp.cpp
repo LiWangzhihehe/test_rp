@@ -7,8 +7,10 @@ using namespace std;
 
 int main()
 {
+	// delete a nullptr.
 	int* p;
 	delete p;
+
 	cout << "Hello CMake." << endl;
 	return 0;
 }
