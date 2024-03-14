@@ -7,11 +7,9 @@ using namespace std;
 
 int main()
 {
-	// delete a nullptr.
-	int* p;
-	// print p value.
-	cout << "p value: " << p << endl;
-	delete p;
+	char a[1];
+	const char* str = "Hello CMake.";
+	memcpy(a, str, 13);
 
 	cout << "Hello CMake." << endl;
 	return 0;
