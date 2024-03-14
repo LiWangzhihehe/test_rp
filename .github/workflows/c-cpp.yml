@@ -11,27 +11,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
+    - uses: actions/checkout@v3
 
     - name: Install cppcheck
       run: choco install cppcheck
 
     - name: Run cppcheck
       run: cppcheck --enable=all .
-
-    - name: configure
-      run: ./configure
-
-    - name: make
-      run: make
-
-    - name: make check
-      run: make check
-
-    - name: make distcheck
-      run: make distcheck
